@@ -230,7 +230,7 @@ p { text-wrap: pretty; }
 /* ---------- Logo strip ---------- */
 .logos { padding: clamp(48px, 9vw, 90px) 0 clamp(36px, 7vw, 70px); text-align: center; }
 
-.logos h4 {
+.logos h3, .logos h4 {
   font-family: var(--font-display);
   font-weight: 400;
   font-size: 22px;
@@ -553,7 +553,6 @@ form .btn { width: 100%; cursor: pointer; margin-top: 6px; }
   margin-top: 14px;
   font-size: 12px;
   color: var(--gray-text);
-  opacity: 0.75;
 }
 
 .photo-credit a { color: inherit; }
