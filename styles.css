@@ -854,38 +854,39 @@ form .btn { width: 100%; cursor: pointer; margin-top: 6px; }
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: clamp(20px, 3vw, 32px);
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 6px;
 }
 
 .product-card {
-  background: var(--white);
   border: 1px solid var(--gray-line);
-  padding: 36px 32px 40px;
-  text-align: center;
+  border-radius: 6px;
+  padding: 10px 12px;
+  text-align: left;
+  transition: border-color 0.2s;
+}
+
+.product-card:hover {
+  border-color: var(--black);
 }
 
 .product-card h3 {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 24px;
-  margin-bottom: 12px;
-}
-
-.product-card p {
-  font-size: 16px;
-  color: var(--gray-text);
-  margin-bottom: 20px;
+  font-size: 13px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product-card a {
-  font-weight: 600;
-  font-size: 15px;
   color: var(--black);
-  text-decoration: underline;
+  text-decoration: none;
+  display: block;
 }
 
-.product-card a:hover { opacity: 0.6; }
+.product-card a:hover { opacity: 0.55; }
 
 @media (prefers-reduced-motion: reduce) {
   .hero h1, .hero-side p, .hero-ctas { animation: none; }
