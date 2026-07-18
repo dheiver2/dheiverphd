@@ -740,6 +740,152 @@ form .btn { width: 100%; cursor: pointer; margin-top: 6px; }
 .faq-item summary { transition: opacity 0.2s ease; }
 @media (hover: hover) and (pointer: fine) { .faq-item summary:hover { opacity: 0.65; } }
 
+/* ---------- Speaking ---------- */
+.speaking { padding: clamp(56px, 11vw, 110px) 0; }
+
+.speaking h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(32px, 3.6vw, 48px);
+  margin-bottom: 12px;
+}
+
+.speaking .section-sub {
+  font-size: clamp(17px, 1.5vw, 20px);
+  color: var(--gray-text);
+  margin-bottom: clamp(32px, 5vw, 48px);
+  max-width: 680px;
+}
+
+.speaking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(20px, 3vw, 32px);
+  margin-bottom: clamp(28px, 4vw, 40px);
+}
+
+.speaking-grid article {
+  border: 1px solid var(--gray-line);
+  overflow: hidden;
+}
+
+.speaking-grid img {
+  width: 100%;
+  height: clamp(200px, 26vw, 300px);
+  object-fit: cover;
+}
+
+.speaking-grid h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 20px;
+  margin: 20px 24px 8px;
+}
+
+.speaking-grid p {
+  font-size: 15px;
+  color: var(--gray-text);
+  margin: 0 24px 20px;
+}
+
+.speaking-cta { text-align: center; }
+
+/* ---------- Impact Strip ---------- */
+.impact {
+  background: var(--black);
+  color: var(--white);
+  padding: clamp(48px, 9vw, 80px) 0;
+}
+
+.impact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(24px, 4vw, 48px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.impact-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.impact-num {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.impact-label {
+  font-size: 14px;
+  color: #9a9a9a;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.impact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.impact-links a {
+  color: var(--white);
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.impact-links a:hover { opacity: 0.7; }
+
+/* ---------- Products ---------- */
+.products { padding: clamp(56px, 11vw, 110px) 0; background: var(--gray-bg); }
+
+.products h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(32px, 3.6vw, 48px);
+  margin-bottom: clamp(28px, 5vw, 48px);
+  text-align: center;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(20px, 3vw, 32px);
+}
+
+.product-card {
+  background: var(--white);
+  border: 1px solid var(--gray-line);
+  padding: 36px 32px 40px;
+  text-align: center;
+}
+
+.product-card h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: var(--gray-text);
+  margin-bottom: 20px;
+}
+
+.product-card a {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--black);
+  text-decoration: underline;
+}
+
+.product-card a:hover { opacity: 0.6; }
+
 @media (prefers-reduced-motion: reduce) {
   .hero h1, .hero-side p, .hero-ctas { animation: none; }
   .reveal { opacity: 1; transform: none; }

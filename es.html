@@ -216,6 +216,73 @@
       </div>
     </section>
 
+    <!-- Speaking -->
+    <section class="speaking">
+      <div class="wrap">
+        <h2>Charlas &amp; Keynotes</h2>
+        <p class="section-sub">Voz reconocida sobre riesgo de IA, comportamiento emergente y adopción responsable en conferencias y eventos corporativos.</p>
+        <div class="speaking-grid">
+          <article>
+            <img src="assets/dheiver-summit.jpg" alt="Dheiver Santos, PhD, hablando en el Summit Inteligência Artificial" loading="lazy" decoding="async">
+            <h3>Summit Inteligência Artificial</h3>
+            <p>Keynote sobre alucinación en IA, riesgo emergente y por qué la interfaz humano-modelo es la nueva frontera de la auditoría.</p>
+          </article>
+          <article>
+            <img src="assets/dheiver-mangaba.jpg" alt="Dheiver Santos presentando Mangaba.AI en conferencia de tecnología" loading="lazy" decoding="async">
+            <h3>Conferencia Tech — Lanzamiento Mangaba.AI</h3>
+            <p>Presentación de frameworks de agentes autónomos de IA para empresas: arquitectura, gobernanza e implementación real.</p>
+          </article>
+        </div>
+        <div class="speaking-cta">
+          <a class="btn btn-outline" href="mailto:dheiver.santos@mangaba.ia.br">Contrate a Dheiver para su Evento</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="impact">
+      <div class="wrap impact-grid">
+        <div class="impact-stat">
+          <span class="impact-num">550+</span>
+          <span class="impact-label">Citas Académicas</span>
+        </div>
+        <div class="impact-stat">
+          <span class="impact-num">12</span>
+          <span class="impact-label">h-index</span>
+        </div>
+        <div class="impact-stat">
+          <span class="impact-num">2</span>
+          <span class="impact-label">Productos de IA Creados</span>
+        </div>
+        <div class="impact-stat">
+          <span class="impact-num">12+</span>
+          <span class="impact-label">Años de Investigación &amp; Industria</span>
+        </div>
+        <div class="impact-links">
+          <a href="https://scholar.google.com/citations?user=mqe6nRAAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+          <a href="https://github.com/dheiver2" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+      <div class="wrap">
+        <h2>Productos Creados</h2>
+        <div class="products-grid">
+          <article class="product-card">
+            <h3>Mangaba.AI</h3>
+            <p>Framework open-source para equipos de agentes autónomos de IA. Orqueste, monitore y gobierne sistemas multiagente en su propia infraestructura.</p>
+            <a href="https://github.com/dheiver2" target="_blank" rel="noopener">Explore en GitHub ↗</a>
+          </article>
+          <article class="product-card">
+            <h3>Cognai</h3>
+            <p>Healthtech que aplica machine learning a la cardiología. Diagnóstico temprano y predicción de riesgo en el punto de atención.</p>
+            <a href="#" target="_blank" rel="noopener">Más información ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <!-- FAQ -->
     <section class="faq" id="faq">
@@ -322,7 +389,7 @@
     addEventListener("scroll", () => hdr.classList.toggle("is-scrolled", scrollY > 8), {passive:true});
 
     // Scroll-reveal
-    const revealEls = document.querySelectorAll(".collage, .logos .wrap, .blindspot-grid, .card, .why-grid, .contact .wrap, .faq .wrap");
+    const revealEls = document.querySelectorAll(".collage, .logos .wrap, .blindspot-grid, .card, .why-grid, .contact .wrap, .faq .wrap, .speaking, .impact, .products");
     if (!matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
       revealEls.forEach(el => el.classList.add("reveal"));
       const io = new IntersectionObserver(es => es.forEach(e => {
