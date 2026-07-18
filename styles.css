@@ -773,6 +773,7 @@ form .btn { width: 100%; cursor: pointer; margin-top: 6px; }
   width: 100%;
   height: clamp(200px, 26vw, 300px);
   object-fit: cover;
+  object-position: center 30%;
 }
 
 .speaking-grid h3 {
