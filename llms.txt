@@ -1,0 +1,24 @@
+# Dheiver Santos, PhD
+
+> Independent AI advisor based in Brazil. PhD in Chemical Engineering with emphasis on Artificial Intelligence (UFBA/UFRJ), postdoctoral research at UNICAMP/UNIT (CNPq) and UFAL (FUNDEPES). Senior Staff Machine Learning Engineer at SX Negócios; former Senior Scientist at Grupo Boticário (GAVB); professor of AI, distributed systems and data science at UPE and Estácio. Creator of Mangaba.AI (open-source framework for autonomous AI agent teams) and founder of Cognai (AI healthtech for cardiology). 550+ academic citations, h-index 12.
+
+## Services
+
+- Executive Training & Programs: structured programs on AI hallucination, emergent behavior, systemic bias and responsible delegation, for boards and leadership teams. In-person or remote.
+- AI Review & Assessment: independent risk assessment of AI models, architecture, processes and costs. Deliverable is a prioritized, actionable risk map. No code access required.
+- Custom AI Model Training & Fine-Tuning: fine-tuning (LoRA or full) of language models on the client's own data for proprietary, Big Tech-independent models deployed on-premise or in private cloud. Includes technical team training.
+
+## Contact
+
+- Email: dheiver.santos@mangaba.ia.br
+- WhatsApp: +55 51 98988-9898
+- Website: https://dheiverphd.com (English), https://dheiverphd.com/pt.html (Português), https://dheiverphd.com/es.html (Español)
+
+## Profiles
+
+- LinkedIn: https://www.linkedin.com/in/dheiver-santos
+- GitHub: https://github.com/dheiver2
+- Google Scholar: https://scholar.google.com/citations?user=mqe6nRAAAAAJ
+- Medium: https://medium.com/@dheiver.santos_10420
+- Instagram: https://www.instagram.com/santos.dheiver/
+- YouTube: https://www.youtube.com/@dheiver
