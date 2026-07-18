@@ -295,6 +295,8 @@
     </div>
   </footer>
 
+  <a class="wa-float" href="https://wa.me/5551989889898" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.33.638 4.51 1.748 6.377L3 29l7.278-2.208A12.44 12.44 0 0 0 16.001 28C22.905 28 28.5 22.404 28.5 15.5S22.905 3 16.001 3Zm0 22.727c-1.98 0-3.878-.53-5.53-1.53l-.397-.235-4.318 1.31 1.334-4.21-.26-.42a10.19 10.19 0 0 1-1.603-5.442c0-5.658 4.605-10.263 10.274-10.263 5.658 0 10.263 4.605 10.263 10.263 0 5.669-4.605 10.527-10.263 10.527Zm5.632-7.688c-.31-.155-1.831-.904-2.114-1.007-.284-.104-.49-.155-.697.155-.207.31-.8 1.007-.98 1.214-.18.207-.362.233-.671.078-.31-.155-1.309-.483-2.494-1.54-.922-.822-1.545-1.837-1.726-2.147-.18-.31-.02-.478.136-.633.14-.14.31-.362.465-.543.155-.18.207-.31.31-.517.104-.207.052-.388-.026-.543-.078-.155-.697-1.68-.955-2.301-.252-.605-.508-.523-.697-.533-.18-.008-.388-.01-.595-.01-.207 0-.543.078-.827.388-.284.31-1.084 1.06-1.084 2.585 0 1.526 1.11 3 1.265 3.207.155.207 2.185 3.335 5.293 4.677.74.319 1.317.51 1.767.653.742.236 1.418.203 1.952.123.596-.089 1.831-.749 2.089-1.472.258-.723.258-1.343.18-1.472-.077-.129-.284-.207-.594-.362Z"/></svg></a>
+
   <script>
     document.getElementById("lang-select").addEventListener("change", (e) => {
       window.location.href = e.target.value;
@@ -315,6 +317,33 @@
       if (!mainNav.contains(e.target) && !navToggle.contains(e.target)) closeNav();
     });
     document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeNav(); });
+
+    // Header shadow on scroll
+    const hdr = document.querySelector(".site-header");
+    addEventListener("scroll", () => hdr.classList.toggle("is-scrolled", scrollY > 8), {passive:true});
+
+    // Scroll-reveal
+    const revealEls = document.querySelectorAll(".collage, .logos .wrap, .blindspot-grid, .card, .why-grid, .contact .wrap, .faq .wrap");
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+      revealEls.forEach(el => el.classList.add("reveal"));
+      const io = new IntersectionObserver(es => es.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); }
+      }), {threshold: 0.12});
+      revealEls.forEach(el => io.observe(el));
+    }
+
+    // Scrollspy: highlight nav link of section in view
+    const spyMap = [["#contact","contact"],["#about","blindspot"],["#services","how"]];
+    const navLinks = [...document.querySelectorAll(".main-nav a")];
+    addEventListener("scroll", () => {
+      let active = "#top";
+      for (const [hash, cls] of spyMap) {
+        const sec = document.querySelector("." + cls);
+        if (sec && sec.getBoundingClientRect().top < innerHeight * 0.4) { active = hash; break; }
+      }
+      navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === active));
+    }, {passive:true});
+
 
     // Smooth in-page anchor scrolling with sticky-header offset (robust across browsers)
     document.querySelectorAll('a[href^="#"]').forEach(link => {
