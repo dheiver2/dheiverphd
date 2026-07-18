@@ -230,7 +230,7 @@ p { text-wrap: pretty; }
 /* ---------- Logo strip ---------- */
 .logos { padding: clamp(48px, 9vw, 90px) 0 clamp(36px, 7vw, 70px); text-align: center; }
 
-.logos h3, .logos h4 {
+.logos h2, .logos h3, .logos h4 {
   font-family: var(--font-display);
   font-weight: 400;
   font-size: 22px;
@@ -297,7 +297,7 @@ p { text-wrap: pretty; }
   gap: clamp(36px, 7vw, 80px);
 }
 
-.blindspot h3 {
+.blindspot h2, .blindspot h3 {
   font-family: var(--font-display);
   font-weight: 400;
   font-size: clamp(32px, 3.4vw, 46px);
@@ -407,14 +407,14 @@ p { text-wrap: pretty; }
   object-position: top center;
 }
 
-.why h3 {
+.why h2, .why h3 {
   font-family: var(--font-display);
   font-weight: 400;
   font-size: clamp(32px, 3.6vw, 48px);
   line-height: 1.15;
 }
 
-.why h3 .muted { color: #9a9a9a; }
+.why h2 .muted, .why h3 .muted { color: #9a9a9a; }
 
 .why p + p { margin-top: 20px; }
 .why p { color: #d6d6d6; }
