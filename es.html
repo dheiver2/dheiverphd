@@ -67,9 +67,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide-core.min.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué hace un asesor independiente de IA?", "acceptedAnswer": {"@type": "Answer", "text": "Un asesor independiente de IA evalúa cómo su organización usa la IA — modelos, procesos y supervisión humana — sin vender software ni plataformas. El único entregable es una visión precisa de su exposición real, además de formación para que su equipo actúe."}}, {"@type": "Question", "name": "¿Qué es el fine-tuning de modelos de IA corporativos?", "acceptedAnswer": {"@type": "Answer", "text": "El fine-tuning adapta un modelo de lenguaje a los datos, vocabulario y procesos de su empresa, generando un modelo propietario que corre en su propia infraestructura — independiente de precios, límites y políticas de las big tech. Usamos LoRA o fine-tuning completo según el caso."}}, {"@type": "Question", "name": "¿Cómo funciona la revisión y evaluación de IA?", "acceptedAnswer": {"@type": "Answer", "text": "Es una evaluación estructurada mediante entrevistas, revisión de procesos y análisis de documentación — sin acceso al código. El entregable es un mapa de riesgos específico, priorizado y accionable, con informe escrito, presentación y sesión de seguimiento."}}, {"@type": "Question", "name": "¿Quién es Dheiver Santos?", "acceptedAnswer": {"@type": "Answer", "text": "Dheiver Santos, PhD, es ingeniero de machine learning e investigador en IA, doctor en Ingeniería Química con énfasis en IA (UFBA/UFRJ), creador del framework open-source Mangaba.AI y fundador de la healthtech Cognai. Tiene más de 550 citas académicas y experiencia en SX Negócios y Grupo Boticário."}}]}</script>
 </head>
 <body>
+  <div class="scroll-progress" id="scroll-progress"></div>
 
   <!-- Header -->
   <header class="site-header">
@@ -116,29 +119,33 @@
 
     <!-- Photo collage -->
     <section class="collage">
-      <img src="assets/dheiver-blazer.jpg" alt="Dheiver Santos hablando en un evento de IA" width="1280" height="1600">
-      <img src="assets/dheiver-mangaba.jpg" alt="Dheiver Santos presentando Mangaba.AI en un evento tecnológico" width="1200" height="1600">
-      <img src="assets/dheiver-summit.jpg" alt="Dheiver Santos, PhD, hablando en el Summit Inteligencia Artificial" width="1600" height="1052">
+      <a href="assets/dheiver-blazer.jpg" class="glightbox" data-gallery="collage" data-glightbox="title: Dheiver Santos hablando en un evento de IA"><img src="assets/dheiver-blazer.jpg" alt="Dheiver Santos hablando en un evento de IA" width="1280" height="1600"></a>
+      <a href="assets/dheiver-mangaba.jpg" class="glightbox" data-gallery="collage" data-glightbox="title: Dheiver Santos presentando Mangaba.AI en un evento tecnológico"><img src="assets/dheiver-mangaba.jpg" alt="Dheiver Santos presentando Mangaba.AI en un evento tecnológico" width="1200" height="1600"></a>
+      <a href="assets/dheiver-summit.jpg" class="glightbox" data-gallery="collage" data-glightbox="title: Dheiver Santos, PhD, hablando en el Summit Inteligencia Artificial"><img src="assets/dheiver-summit.jpg" alt="Dheiver Santos, PhD, hablando en el Summit Inteligencia Artificial" width="1600" height="1052"></a>
     </section>
 
     <!-- Logos -->
     <section class="logos">
       <div class="wrap">
         <h2>Los estándares detrás de esta práctica, forjados en:</h2>
-        <div class="logo-grid">
-          <img src="assets/logos/ufba.png" alt="UFBA — Universidade Federal da Bahia" width="65" height="100" loading="lazy" decoding="async">
-          <img src="assets/logos/ufrj.svg" alt="UFRJ — Universidade Federal do Rio de Janeiro" width="86" height="100" loading="lazy" decoding="async">
-          <img src="assets/logos/unicamp.svg" alt="UNICAMP — Universidade Estadual de Campinas" width="130" height="100" loading="lazy" decoding="async">
-          <img src="assets/logos/ufal.png" alt="UFAL — Universidade Federal de Alagoas" width="100" height="100" loading="lazy" decoding="async">
-          <img src="assets/logos/upe.png" alt="UPE — Universidade de Pernambuco" width="225" height="100" loading="lazy" decoding="async">
-          <img src="assets/logos/estacio.png" alt="Estácio" width="347" height="100" loading="lazy" decoding="async">
-          <img src="assets/logos/boticario.png" alt="Grupo Boticário" width="298" height="100" loading="lazy" decoding="async">
-          <img src="assets/logos/petrobras.svg" alt="Petrobras" width="120" height="100" loading="lazy" decoding="async">
-          <img src="assets/logos/santander.svg" alt="Santander" width="130" height="100" loading="lazy" decoding="async">
-          <img src="assets/logos/sergipetec.png" alt="SergipeTec — Sergipe Parque Tecnológico" width="280" height="100" loading="lazy" decoding="async">
-          <img src="assets/logos/itp.png" alt="ITP — Instituto de Tecnologia e Pesquisa (NUESC)" width="227" height="100" loading="lazy" decoding="async">
-          <img src="assets/logos/latinoware.svg" alt="Latinoware — 23º Congresso Latino-americano de Software Livre e Tecnologias Abertas" width="180" height="70" loading="lazy" decoding="async">
-          <span class="logo-text">SX Negócios</span>
+        <div class="logo-marquee splide" id="logo-splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+            <li class="splide__slide"><img src="assets/logos/ufba.png" alt="UFBA — Universidade Federal da Bahia" data-tippy-content="UFBA — Universidade Federal da Bahia" width="65" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/ufrj.svg" alt="UFRJ — Universidade Federal do Rio de Janeiro" data-tippy-content="UFRJ — Universidade Federal do Rio de Janeiro" width="86" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/unicamp.svg" alt="UNICAMP — Universidade Estadual de Campinas" data-tippy-content="UNICAMP — Universidade Estadual de Campinas" width="130" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/ufal.png" alt="UFAL — Universidade Federal de Alagoas" data-tippy-content="UFAL — Universidade Federal de Alagoas" width="100" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/upe.png" alt="UPE — Universidade de Pernambuco" data-tippy-content="UPE — Universidade de Pernambuco" width="225" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/estacio.png" alt="Estácio" data-tippy-content="Estácio" width="347" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/boticario.png" alt="Grupo Boticário" data-tippy-content="Grupo Boticário" width="298" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/petrobras.svg" alt="Petrobras" data-tippy-content="Petrobras" width="120" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/santander.svg" alt="Santander" data-tippy-content="Santander" width="130" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/sergipetec.png" alt="SergipeTec — Sergipe Parque Tecnológico" data-tippy-content="SergipeTec — Sergipe Parque Tecnológico" width="280" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/itp.png" alt="ITP — Instituto de Tecnologia e Pesquisa (NUESC)" data-tippy-content="ITP — Instituto de Tecnologia e Pesquisa (NUESC)" width="227" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/latinoware.svg" alt="Latinoware — 23º Congresso Latino-americano de Software Livre e Tecnologias Abertas" data-tippy-content="Latinoware — 23º Congresso Latino-americano de Software Livre e Tecnologias Abertas" width="180" height="70" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><span class="logo-text">SX Negócios</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -225,12 +232,12 @@
         <p class="section-sub">Voz reconocida sobre riesgo de IA, comportamiento emergente y adopción responsable en conferencias y eventos corporativos.</p>
         <div class="speaking-grid">
           <article>
-            <img src="assets/dheiver-summit.jpg" alt="Dheiver Santos, PhD, hablando en el Summit Inteligência Artificial" loading="lazy" decoding="async">
+            <a href="assets/dheiver-summit.jpg" class="glightbox" data-gallery="speaking" data-glightbox="title: Summit Inteligência Artificial"><img src="assets/dheiver-summit.jpg" alt="Dheiver Santos, PhD, hablando en el Summit Inteligência Artificial" loading="lazy" decoding="async"></a>
             <h3>Summit Inteligência Artificial</h3>
             <p>Keynote sobre alucinación en IA, riesgo emergente y por qué la interfaz humano-modelo es la nueva frontera de la auditoría.</p>
           </article>
           <article>
-            <img src="assets/dheiver-mangaba.jpg" alt="Dheiver Santos presentando Mangaba.AI en Latinoware 2026" loading="lazy" decoding="async">
+            <a href="assets/dheiver-mangaba.jpg" class="glightbox" data-gallery="speaking" data-glightbox="title: Latinoware 2026 — Lanzamiento Mangaba.AI"><img src="assets/dheiver-mangaba.jpg" alt="Dheiver Santos presentando Mangaba.AI en Latinoware 2026" loading="lazy" decoding="async"></a>
             <h3>Latinoware 2026 — Lanzamiento Mangaba.AI</h3>
             <p>Presentación de frameworks de agentes autónomos de IA en el 23º Congreso Latinoamericano de Software Libre y Tecnologías Abiertas. <a href="https://latinoware.org/palestrante/dheiver-francisco-santos/" target="_blank" rel="noopener">Ver perfil ↗</a></p>
           </article>
@@ -245,23 +252,23 @@
     <section class="impact">
       <div class="wrap impact-grid">
         <div class="impact-stat">
-          <span class="impact-num">200+</span>
+          <span class="impact-num" id="cu-papers" data-cu-end="200" data-cu-suffix="+">0</span>
           <span class="impact-label">Artículos Académicos</span>
         </div>
         <div class="impact-stat">
-          <span class="impact-num">12</span>
+          <span class="impact-num" id="cu-hindex" data-cu-end="12" data-cu-suffix="">0</span>
           <span class="impact-label">h-index</span>
         </div>
         <div class="impact-stat">
-          <span class="impact-num">10</span>
+          <span class="impact-num" id="cu-products" data-cu-end="10" data-cu-suffix="">0</span>
           <span class="impact-label">Productos de IA Creados</span>
         </div>
         <div class="impact-stat">
-          <span class="impact-num">1</span>
+          <span class="impact-num" id="cu-patent" data-cu-end="1" data-cu-suffix="">0</span>
           <span class="impact-label">Patente (INPI)</span>
         </div>
         <div class="impact-stat">
-          <span class="impact-num">12+</span>
+          <span class="impact-num" id="cu-years" data-cu-end="12" data-cu-suffix="+">0</span>
           <span class="impact-label">Años de Investigación &amp; Industria</span>
         </div>
         <div class="impact-links">
@@ -376,9 +383,15 @@
     <section class="contact" id="contact">
       <div class="wrap contact-single">
         <h2>No espere a que el punto ciego se vuelva visible para todos.</h2>
-        <div class="contact-emails">
+        <div class="contact-emails" x-data="{ copied: false }">
           <p class="contact-emails-label">Formación y Programas · Revisión y Evaluación de IA</p>
-          <p><a href="mailto:dheiver.santos@mangaba.ia.br">dheiver.santos@mangaba.ia.br</a></p>
+          <p class="copy-email-row">
+            <a href="mailto:dheiver.santos@mangaba.ia.br">dheiver.santos@mangaba.ia.br</a>
+            <button type="button" class="copy-btn" data-tippy-content="Copiar correo" @click="navigator.clipboard.writeText('dheiver.santos@mangaba.ia.br').catch(() => {}); copied = true; setTimeout(() => copied = false, 2000)" :aria-label="copied ? 'Copied' : 'Copiar correo'">
+              <svg x-show="!copied" viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M4 13V4.5A1.5 1.5 0 0 1 5.5 3H13"/></svg>
+              <svg x-show="copied" x-cloak viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 10.5 8 14l8-8"/></svg>
+            </button>
+          </p>
         </div>
         <p class="contact-note">Contáctenos directamente. Respondemos en 24 horas.</p>
         <a class="btn btn-solid btn-whatsapp" href="https://wa.me/5551989889898" target="_blank" rel="noopener noreferrer">
@@ -427,7 +440,18 @@
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/5551989889898" target="_blank" rel="noopener noreferrer" aria-label="Hablar por WhatsApp"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.33.638 4.51 1.748 6.377L3 29l7.278-2.208A12.44 12.44 0 0 0 16.001 28C22.905 28 28.5 22.404 28.5 15.5S22.905 3 16.001 3Zm0 22.727c-1.98 0-3.878-.53-5.53-1.53l-.397-.235-4.318 1.31 1.334-4.21-.26-.42a10.19 10.19 0 0 1-1.603-5.442c0-5.658 4.605-10.263 10.274-10.263 5.658 0 10.263 4.605 10.263 10.263 0 5.669-4.605 10.527-10.263 10.527Zm5.632-7.688c-.31-.155-1.831-.904-2.114-1.007-.284-.104-.49-.155-.697.155-.207.31-.8 1.007-.98 1.214-.18.207-.362.233-.671.078-.31-.155-1.309-.483-2.494-1.54-.922-.822-1.545-1.837-1.726-2.147-.18-.31-.02-.478.136-.633.14-.14.31-.362.465-.543.155-.18.207-.31.31-.517.104-.207.052-.388-.026-.543-.078-.155-.697-1.68-.955-2.301-.252-.605-.508-.523-.697-.533-.18-.008-.388-.01-.595-.01-.207 0-.543.078-.827.388-.284.31-1.084 1.06-1.084 2.585 0 1.526 1.11 3 1.265 3.207.155.207 2.185 3.335 5.293 4.677.74.319 1.317.51 1.767.653.742.236 1.418.203 1.952.123.596-.089 1.831-.749 2.089-1.472.258-.723.258-1.343.18-1.472-.077-.129-.284-.207-.594-.362Z"/></svg></a>
+  <a class="wa-float" href="https://wa.me/5551989889898" target="_blank" rel="noopener noreferrer" aria-label="Hablar por WhatsApp" data-tippy-content="Hablar por WhatsApp"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.33.638 4.51 1.748 6.377L3 29l7.278-2.208A12.44 12.44 0 0 0 16.001 28C22.905 28 28.5 22.404 28.5 15.5S22.905 3 16.001 3Zm0 22.727c-1.98 0-3.878-.53-5.53-1.53l-.397-.235-4.318 1.31 1.334-4.21-.26-.42a10.19 10.19 0 0 1-1.603-5.442c0-5.658 4.605-10.263 10.274-10.263 5.658 0 10.263 4.605 10.263 10.263 0 5.669-4.605 10.527-10.263 10.527Zm5.632-7.688c-.31-.155-1.831-.904-2.114-1.007-.284-.104-.49-.155-.697.155-.207.31-.8 1.007-.98 1.214-.18.207-.362.233-.671.078-.31-.155-1.309-.483-2.494-1.54-.922-.822-1.545-1.837-1.726-2.147-.18-.31-.02-.478.136-.633.14-.14.31-.362.465-.543.155-.18.207-.31.31-.517.104-.207.052-.388-.026-.543-.078-.155-.697-1.68-.955-2.301-.252-.605-.508-.523-.697-.533-.18-.008-.388-.01-.595-.01-.207 0-.543.078-.827.388-.284.31-1.084 1.06-1.084 2.585 0 1.526 1.11 3 1.265 3.207.155.207 2.185 3.335 5.293 4.677.74.319 1.317.51 1.767.653.742.236 1.418.203 1.952.123.596-.089 1.831-.749 2.089-1.472.258-.723.258-1.343.18-1.472-.077-.129-.284-.207-.594-.362Z"/></svg></a>
+
+  <!-- Modern UI libraries (CDN, no build step) -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.umd.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1/dist/confetti.browser.min.js"></script>
+  <script src="https://unpkg.com/alpinejs@3/dist/cdn.min.js" defer></script>
 
   <script>
     document.getElementById("lang-select").addEventListener("change", (e) => {
@@ -450,13 +474,50 @@
     });
     document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeNav(); });
 
-    // Header shadow on scroll
+    const prefersReducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // 1. Lenis — smooth inertia scrolling site-wide
+    let lenis = null;
+    if (typeof Lenis !== "undefined" && !prefersReducedMotion) {
+      lenis = new Lenis({ duration: 1.1, smoothWheel: true });
+      const raf = (t) => { lenis.raf(t); requestAnimationFrame(raf); };
+      requestAnimationFrame(raf);
+    }
+
+    // Header shadow, scrollspy, and progress bar — unified handler.
+    // Lenis intercepts native scroll, so it fires its own "scroll" event
+    // instead of the browser's; fall back to the native one if Lenis is off.
     const hdr = document.querySelector(".site-header");
-    addEventListener("scroll", () => hdr.classList.toggle("is-scrolled", scrollY > 8), {passive:true});
+    const progressBar = document.getElementById("scroll-progress");
+    const spyMap = [["#contact","contact"],["#about","blindspot"],["#services","how"]];
+    const navLinks = [...document.querySelectorAll(".main-nav a")];
+
+    function handleScroll() {
+      const y = window.scrollY;
+      hdr.classList.toggle("is-scrolled", y > 8);
+
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      progressBar.style.width = (max > 0 ? (y / max) * 100 : 0) + "%";
+
+      let active = "#top";
+      for (const [hash, cls] of spyMap) {
+        const sec = document.querySelector("." + cls);
+        if (sec && sec.getBoundingClientRect().top < innerHeight * 0.4) { active = hash; break; }
+      }
+      navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === active));
+    }
+
+    if (lenis) {
+      lenis.on("scroll", handleScroll);
+    } else {
+      addEventListener("scroll", handleScroll, { passive: true });
+    }
+    handleScroll();
 
     // Scroll-reveal
     const revealEls = document.querySelectorAll(".collage, .logos .wrap, .blindspot-grid, .card, .why-grid, .contact .wrap, .faq .wrap, .speaking, .impact, .products");
-    if (!matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+    if (!prefersReducedMotion && "IntersectionObserver" in window) {
       revealEls.forEach(el => el.classList.add("reveal"));
       const io = new IntersectionObserver(es => es.forEach(e => {
         if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); }
@@ -464,20 +525,7 @@
       revealEls.forEach(el => io.observe(el));
     }
 
-    // Scrollspy: highlight nav link of section in view
-    const spyMap = [["#contact","contact"],["#about","blindspot"],["#services","how"]];
-    const navLinks = [...document.querySelectorAll(".main-nav a")];
-    addEventListener("scroll", () => {
-      let active = "#top";
-      for (const [hash, cls] of spyMap) {
-        const sec = document.querySelector("." + cls);
-        if (sec && sec.getBoundingClientRect().top < innerHeight * 0.4) { active = hash; break; }
-      }
-      navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === active));
-    }, {passive:true});
-
-
-    // Smooth in-page anchor scrolling with sticky-header offset (robust across browsers)
+    // Smooth in-page anchor scrolling with sticky-header offset (uses Lenis when available)
     document.querySelectorAll('a[href^="#"]').forEach(link => {
       link.addEventListener("click", (e) => {
         const id = link.getAttribute("href").slice(1);
@@ -485,11 +533,56 @@
         if (!target) return;
         e.preventDefault();
         const headerH = document.querySelector(".site-header").offsetHeight;
-        const top = target.getBoundingClientRect().top + window.scrollY - headerH - 12;
-        window.scrollTo({ top, behavior: "smooth" });
+        if (lenis) {
+          lenis.scrollTo(target, { offset: -headerH - 12 });
+        } else {
+          const top = target.getBoundingClientRect().top + window.scrollY - headerH - 12;
+          window.scrollTo({ top, behavior: "smooth" });
+        }
         history.pushState(null, "", link.getAttribute("href"));
       });
     });
+
+    // 2–3. GLightbox — click-to-zoom on collage & speaking photos
+    if (typeof GLightbox !== "undefined") {
+      GLightbox({ selector: ".glightbox", touchNavigation: true, loop: true });
+    }
+
+    // 4. CountUp.js — animated Impact stats, triggered on scroll into view
+    if (typeof countUp !== "undefined" && "IntersectionObserver" in window) {
+      const counters = document.querySelectorAll("[data-cu-end]");
+      const cuIo = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const suffix = el.dataset.cuSuffix || "";
+        const cu = new countUp.CountUp(el, Number(el.dataset.cuEnd), {
+          duration: prefersReducedMotion ? 0 : 2,
+          suffix,
+        });
+        if (!cu.error) cu.start();
+        cuIo.unobserve(el);
+      }), { threshold: 0.5 });
+      counters.forEach(el => cuIo.observe(el));
+    }
+
+    // 5–6. Tippy.js — styled tooltips on logo grid + WhatsApp float button
+    if (typeof tippy !== "undefined") {
+      tippy("[data-tippy-content]", { theme: "dheiver", animation: "shift-away", delay: [150, 0] });
+    }
+
+    // 7. Splide — auto-scrolling infinite marquee for the credentials logo strip
+    if (typeof Splide !== "undefined") {
+      new Splide("#logo-splide", {
+        type: "loop",
+        drag: "free",
+        arrows: false,
+        pagination: false,
+        perPage: 6,
+        gap: "2.5rem",
+        autoScroll: { speed: prefersReducedMotion ? 0 : 0.6, pauseOnHover: true },
+        breakpoints: { 960: { perPage: 3 }, 640: { perPage: 2 } },
+      }).mount(window.splide?.Extensions || {});
+    }
 
     // Formulário local: sem backend — apenas confirmação visual.
     for (const [formId, msgId] of [["newsletter-form", "nl-success"]]) {
@@ -498,6 +591,10 @@
         e.preventDefault();
         document.getElementById(msgId).style.display = "block";
         form.querySelectorAll("input, textarea").forEach(el => { if (el.type !== "submit") el.value = ""; });
+        // 10. Confetti micro-interaction on successful subscribe
+        if (typeof confetti !== "undefined" && !prefersReducedMotion) {
+          confetti({ particleCount: 80, spread: 65, origin: { y: 0.7 }, colors: ["#0e0e0e", "#4a4a4a", "#e4e2de"] });
+        }
       });
     }
   </script>
