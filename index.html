@@ -67,8 +67,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide-core.min.css">
+  <link rel="stylesheet" href="assets/vendor/glightbox.min.css">
+  <link rel="stylesheet" href="assets/vendor/splide-core.min.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does an independent AI advisor do?", "acceptedAnswer": {"@type": "Answer", "text": "An independent AI advisor evaluates how your organization uses AI — models, processes, and human oversight — without selling software or platforms. The only deliverable is an accurate picture of your actual exposure, plus training so your team can act on it."}}, {"@type": "Question", "name": "What is corporate AI model fine-tuning?", "acceptedAnswer": {"@type": "Answer", "text": "Fine-tuning adapts a language model to your company's own data, vocabulary and workflows, producing a proprietary model you can run on your own infrastructure — independent of Big Tech pricing, rate limits and policy changes. We use LoRA or full fine-tuning depending on the case."}}, {"@type": "Question", "name": "How does an AI Review & Assessment work?", "acceptedAnswer": {"@type": "Answer", "text": "It is a structured assessment through interviews, process review and documentation analysis — no code access required. The deliverable is a specific, prioritized and actionable risk map, with a written report, presentation and follow-up session."}}, {"@type": "Question", "name": "Who is Dheiver Santos?", "acceptedAnswer": {"@type": "Answer", "text": "Dheiver Santos, PhD, is a machine learning engineer and AI researcher with a PhD in Chemical Engineering with emphasis on AI (UFBA/UFRJ), creator of the open-source framework Mangaba.AI and founder of the healthtech Cognai. He has 550+ academic citations and industry experience at SX Negócios and Grupo Boticário."}}]}</script>
 </head>
 <body>
@@ -86,7 +86,7 @@
           <a href="#top" class="active">Home</a>
           <a href="#services">Services</a>
           <a href="#about">About</a>
-          <a href="#contact">More</a>
+          <a href="#contact">Contact</a>
         </nav>
         <select class="lang-select" aria-label="Language" id="lang-select">
           <option value="index.html" selected>English</option>
@@ -119,9 +119,9 @@
 
     <!-- Photo collage -->
     <section class="collage">
-      <a href="assets/dheiver-blazer.jpg" class="glightbox" data-gallery="collage" data-glightbox="title: Speaking on stage at an AI event"><img src="assets/dheiver-blazer.jpg" alt="Dheiver Santos speaking on stage at an AI event" width="1280" height="1600"></a>
-      <a href="assets/dheiver-mangaba.jpg" class="glightbox" data-gallery="collage" data-glightbox="title: Presenting Mangaba.AI at a tech conference"><img src="assets/dheiver-mangaba.jpg" alt="Dheiver Santos presenting Mangaba.AI at a tech conference" width="1200" height="1600"></a>
-      <a href="assets/dheiver-summit.jpg" class="glightbox" data-gallery="collage" data-glightbox="title: Speaking at the Summit Inteligencia Artificial"><img src="assets/dheiver-summit.jpg" alt="Dheiver Santos, PhD, speaking at the Summit Inteligencia Artificial" width="1600" height="1052"></a>
+      <a href="assets/dheiver-blazer.jpg" class="glightbox" data-gallery="collage" data-glightbox="title: Speaking on stage at an AI event"><picture><source type="image/webp" srcset="assets/dheiver-blazer-560.webp 560w, assets/dheiver-blazer.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/dheiver-blazer.jpg" fetchpriority="high" alt="Dheiver Santos speaking on stage at an AI event" width="1280" height="1600"></picture></a>
+      <a href="assets/dheiver-mangaba.jpg" class="glightbox" data-gallery="collage" data-glightbox="title: Presenting Mangaba.AI at a tech conference"><picture><source type="image/webp" srcset="assets/dheiver-mangaba-560.webp 560w, assets/dheiver-mangaba.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/dheiver-mangaba.jpg" alt="Dheiver Santos presenting Mangaba.AI at a tech conference" width="1200" height="1600"></picture></a>
+      <a href="assets/dheiver-summit.jpg" class="glightbox" data-gallery="collage" data-glightbox="title: Speaking at the Summit Inteligencia Artificial"><picture><source type="image/webp" srcset="assets/dheiver-summit-560.webp 560w, assets/dheiver-summit.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/dheiver-summit.jpg" alt="Dheiver Santos, PhD, speaking at the Summit Inteligencia Artificial" width="1600" height="1052"></picture></a>
     </section>
 
     <!-- Logos -->
@@ -131,18 +131,18 @@
         <div class="logo-marquee splide" id="logo-splide">
           <div class="splide__track">
             <ul class="splide__list">
-            <li class="splide__slide"><img src="assets/logos/ufba.png" alt="UFBA — Universidade Federal da Bahia" data-tippy-content="UFBA — Universidade Federal da Bahia" width="65" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/ufrj.svg" alt="UFRJ — Universidade Federal do Rio de Janeiro" data-tippy-content="UFRJ — Universidade Federal do Rio de Janeiro" width="86" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/unicamp.svg" alt="UNICAMP — Universidade Estadual de Campinas" data-tippy-content="UNICAMP — Universidade Estadual de Campinas" width="130" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/ufal.png" alt="UFAL — Universidade Federal de Alagoas" data-tippy-content="UFAL — Universidade Federal de Alagoas" width="100" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/upe.png" alt="UPE — Universidade de Pernambuco" data-tippy-content="UPE — Universidade de Pernambuco" width="225" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/estacio.png" alt="Estácio" data-tippy-content="Estácio" width="347" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/boticario.png" alt="Grupo Boticário" data-tippy-content="Grupo Boticário" width="298" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/petrobras.svg" alt="Petrobras" data-tippy-content="Petrobras" width="120" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/santander.svg" alt="Santander" data-tippy-content="Santander" width="130" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/sergipetec.png" alt="SergipeTec — Sergipe Parque Tecnológico" data-tippy-content="SergipeTec — Sergipe Parque Tecnológico" width="280" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/itp.png" alt="ITP — Instituto de Tecnologia e Pesquisa (NUESC)" data-tippy-content="ITP — Instituto de Tecnologia e Pesquisa (NUESC)" width="227" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/latinoware.svg" alt="Latinoware — 23º Congresso Latino-americano de Software Livre e Tecnologias Abertas" data-tippy-content="Latinoware — 23º Congresso Latino-americano de Software Livre e Tecnologias Abertas" width="180" height="70" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/ufba.png" alt="UFBA — Universidade Federal da Bahia" title="UFBA — Universidade Federal da Bahia" width="65" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/ufrj.svg" alt="UFRJ — Universidade Federal do Rio de Janeiro" title="UFRJ — Universidade Federal do Rio de Janeiro" width="86" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/unicamp.svg" alt="UNICAMP — Universidade Estadual de Campinas" title="UNICAMP — Universidade Estadual de Campinas" width="130" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/ufal.png" alt="UFAL — Universidade Federal de Alagoas" title="UFAL — Universidade Federal de Alagoas" width="100" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/upe.png" alt="UPE — Universidade de Pernambuco" title="UPE — Universidade de Pernambuco" width="225" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/estacio.png" alt="Estácio" title="Estácio" width="347" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/boticario.png" alt="Grupo Boticário" title="Grupo Boticário" width="298" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/petrobras.svg" alt="Petrobras" title="Petrobras" width="120" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/santander.svg" alt="Santander" title="Santander" width="130" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/sergipetec.png" alt="SergipeTec — Sergipe Parque Tecnológico" title="SergipeTec — Sergipe Parque Tecnológico" width="280" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/itp.png" alt="ITP — Instituto de Tecnologia e Pesquisa (NUESC)" title="ITP — Instituto de Tecnologia e Pesquisa (NUESC)" width="227" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/latinoware.svg" alt="Latinoware — 23º Congresso Latino-americano de Software Livre e Tecnologias Abertas" title="Latinoware — 23º Congresso Latino-americano de Software Livre e Tecnologias Abertas" width="180" height="70" loading="lazy" decoding="async"></li>
             <li class="splide__slide"><span class="logo-text">SX Negócios</span></li>
             </ul>
           </div>
@@ -173,7 +173,7 @@
         </div>
         <div class="cards">
           <article class="card">
-            <img src="assets/training-session.jpg" alt="Hands-on executive training session with a laptop" loading="lazy" decoding="async" width="1000" height="667">
+            <picture><source type="image/webp" srcset="assets/training-session-560.webp 560w, assets/training-session.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/training-session.jpg" alt="Hands-on executive training session with a laptop" loading="lazy" decoding="async" width="1000" height="667"></picture>
             <div class="card-body">
               <h3>01. Executive Training &amp; Programs</h3>
               <p class="tagline">For leaders making decisions with AI, not just about AI.</p>
@@ -184,7 +184,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="assets/review-analysis.jpg" alt="Desk with business charts, laptop and documents under review" loading="lazy" decoding="async" width="1023" height="623">
+            <picture><source type="image/webp" srcset="assets/review-analysis-560.webp 560w, assets/review-analysis.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/review-analysis.jpg" alt="Desk with business charts, laptop and documents under review" loading="lazy" decoding="async" width="1023" height="623"></picture>
             <div class="card-body">
               <h3>02. AI Review &amp; Assessment</h3>
               <p class="tagline">What is your organization trusting AI to do, and what happens when it is wrong?</p>
@@ -196,7 +196,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="assets/gpu-training.jpg" alt="GPU server cluster used for training and fine-tuning custom AI models" loading="lazy" decoding="async" width="1600" height="1200">
+            <picture><source type="image/webp" srcset="assets/gpu-training-560.webp 560w, assets/gpu-training.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/gpu-training.jpg" alt="GPU server cluster used for training and fine-tuning custom AI models" loading="lazy" decoding="async" width="1600" height="1200"></picture>
             <div class="card-body">
               <h3>03. Custom AI Model Training &amp; Fine-Tuning</h3>
               <p class="tagline">For companies that want their own model, not a rented one.</p>
@@ -213,7 +213,7 @@
     <!-- Why -->
     <section class="why">
       <div class="wrap why-grid">
-        <div class="why-photo"><img src="assets/dheiver-studio.jpg" alt="Dheiver Santos, PhD" loading="lazy" decoding="async" width="1600" height="893"></div>
+        <div class="why-photo"><picture><source type="image/webp" srcset="assets/dheiver-studio-560.webp 560w, assets/dheiver-studio.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/dheiver-studio.jpg" alt="Dheiver Santos, PhD" loading="lazy" decoding="async" width="1600" height="893"></picture></div>
         <h2><span class="muted">Why Dheiver Santos:</span><br>Independent clarity in a world of vendor promises.</h2>
         <div>
           <p>Every AI vendor promises speed and efficiency. But who tells you what your AI is <em>actually</em> doing — and what happens when it gets it wrong?</p>
@@ -234,12 +234,12 @@
         <p class="section-sub">Recognized voice on AI risk, emergent behavior, and responsible AI adoption at industry conferences and corporate events.</p>
         <div class="speaking-grid">
           <article>
-            <a href="assets/dheiver-summit.jpg" class="glightbox" data-gallery="speaking" data-glightbox="title: Summit Inteligência Artificial"><img src="assets/dheiver-summit.jpg" alt="Dheiver Santos, PhD, speaking at the Summit Inteligência Artificial" loading="lazy" decoding="async"></a>
+            <a href="assets/dheiver-summit.jpg" class="glightbox" data-gallery="speaking" data-glightbox="title: Summit Inteligência Artificial"><picture><source type="image/webp" srcset="assets/dheiver-summit-560.webp 560w, assets/dheiver-summit.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/dheiver-summit.jpg" alt="Dheiver Santos, PhD, speaking at the Summit Inteligência Artificial" loading="lazy" decoding="async"></picture></a>
             <h3>Summit Inteligência Artificial</h3>
             <p>Keynote on AI hallucination, emergent risk, and why the human-model interface is the new audit frontier.</p>
           </article>
           <article>
-            <a href="assets/dheiver-mangaba.jpg" class="glightbox" data-gallery="speaking" data-glightbox="title: Latinoware 2026 — Mangaba.AI Launch"><img src="assets/dheiver-mangaba.jpg" alt="Dheiver Santos presenting Mangaba.AI at Latinoware 2026" loading="lazy" decoding="async"></a>
+            <a href="assets/dheiver-mangaba.jpg" class="glightbox" data-gallery="speaking" data-glightbox="title: Latinoware 2026 — Mangaba.AI Launch"><picture><source type="image/webp" srcset="assets/dheiver-mangaba-560.webp 560w, assets/dheiver-mangaba.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/dheiver-mangaba.jpg" alt="Dheiver Santos presenting Mangaba.AI at Latinoware 2026" loading="lazy" decoding="async"></picture></a>
             <h3>Latinoware 2026 — Mangaba.AI Launch</h3>
             <p>Presenting autonomous AI agent frameworks at the 23rd Latin American Congress of Free Software and Open Technologies. <a href="https://latinoware.org/palestrante/dheiver-francisco-santos/" target="_blank" rel="noopener">See profile ↗</a></p>
           </article>
@@ -284,38 +284,38 @@
     <section class="products">
       <div class="wrap">
         <h2>Products Built</h2>
-        <p class="section-sub">Applied computer vision and machine learning shipped into real clinical and operational workflows.</p>
+        <p class="section-sub">Selected work — five of ten AI products shipped into real clinical and operational workflows.</p>
         <div class="products-grid">
           <article class="product-card">
-            <a href="assets/prod-surgical-instrument-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Surgical Instrument Detection"><img src="assets/prod-surgical-instrument-detection.jpg" alt="AI model segmenting and tracking surgical instruments on a tray" width="900" height="540" loading="lazy" decoding="async"></a>
+            <a href="assets/prod-surgical-instrument-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Surgical Instrument Detection"><picture><source type="image/webp" srcset="assets/prod-surgical-instrument-detection-560.webp 560w, assets/prod-surgical-instrument-detection.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/prod-surgical-instrument-detection.jpg" alt="AI model segmenting and tracking surgical instruments on a tray" width="900" height="540" loading="lazy" decoding="async"></picture></a>
             <div class="prod-body">
               <h3>Surgical Instrument Detection</h3>
               <p class="prod-desc">Real-time segmentation tracks every instrument on the surgical tray, reducing the risk of retained items.</p>
             </div>
           </article>
           <article class="product-card">
-            <a href="assets/prod-patient-fall-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Patient Fall &amp; Posture Monitoring"><img src="assets/prod-patient-fall-detection.jpg" alt="AI pose-estimation model monitoring a patient's posture in a clinical room" width="900" height="540" loading="lazy" decoding="async"></a>
+            <a href="assets/prod-patient-fall-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Patient Fall &amp; Posture Monitoring"><picture><source type="image/webp" srcset="assets/prod-patient-fall-detection-560.webp 560w, assets/prod-patient-fall-detection.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/prod-patient-fall-detection.jpg" alt="AI pose-estimation model monitoring a patient's posture in a clinical room" width="900" height="540" loading="lazy" decoding="async"></picture></a>
             <div class="prod-body">
               <h3>Patient Fall &amp; Posture Monitoring</h3>
               <p class="prod-desc">Pose-estimation model watches patient position around the clock and flags falls or unsafe movement instantly.</p>
             </div>
           </article>
           <article class="product-card">
-            <a href="assets/prod-dental-xray-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Dental X-Ray Analysis"><img src="assets/prod-dental-xray-detection.jpg" alt="AI model segmenting individual teeth on a panoramic dental X-ray" width="900" height="540" loading="lazy" decoding="async"></a>
+            <a href="assets/prod-dental-xray-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Dental X-Ray Analysis"><picture><source type="image/webp" srcset="assets/prod-dental-xray-detection-560.webp 560w, assets/prod-dental-xray-detection.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/prod-dental-xray-detection.jpg" alt="AI model segmenting individual teeth on a panoramic dental X-ray" width="900" height="540" loading="lazy" decoding="async"></picture></a>
             <div class="prod-body">
               <h3>Dental X-Ray Analysis</h3>
               <p class="prod-desc">Automated tooth-by-tooth segmentation on panoramic X-rays speeds up diagnosis and treatment planning.</p>
             </div>
           </article>
           <article class="product-card">
-            <a href="assets/prod-vitiligo-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Skin Condition Detection"><img src="assets/prod-vitiligo-detection.jpg" alt="AI model detecting vitiligo on skin with a confidence score" width="900" height="540" loading="lazy" decoding="async"></a>
+            <a href="assets/prod-vitiligo-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Skin Condition Detection"><picture><source type="image/webp" srcset="assets/prod-vitiligo-detection-560.webp 560w, assets/prod-vitiligo-detection.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/prod-vitiligo-detection.jpg" alt="AI model detecting vitiligo on skin with a confidence score" width="900" height="540" loading="lazy" decoding="async"></picture></a>
             <div class="prod-body">
               <h3>Skin Condition Detection</h3>
               <p class="prod-desc">Dermatology model identifies conditions like vitiligo directly from a photo, with a confidence score for triage.</p>
             </div>
           </article>
           <article class="product-card">
-            <a href="assets/prod-blood-cell-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Blood Cell Counting"><img src="assets/prod-blood-cell-detection.jpg" alt="AI model detecting and counting white blood cells under a microscope" width="900" height="540" loading="lazy" decoding="async"></a>
+            <a href="assets/prod-blood-cell-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Blood Cell Counting"><picture><source type="image/webp" srcset="assets/prod-blood-cell-detection-560.webp 560w, assets/prod-blood-cell-detection.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/prod-blood-cell-detection.jpg" alt="AI model detecting and counting white blood cells under a microscope" width="900" height="540" loading="lazy" decoding="async"></picture></a>
             <div class="prod-body">
               <h3>Blood Cell Counting</h3>
               <p class="prod-desc">Microscopy image analysis detects and counts white blood cells automatically, accelerating lab screening.</p>
@@ -351,13 +351,13 @@
     <section class="contact" id="contact">
       <div class="wrap contact-single">
         <h2>Don't wait for the blind spot to become visible to everyone else.</h2>
-        <div class="contact-emails" x-data="{ copied: false }">
+        <div class="contact-emails">
           <p class="contact-emails-label">Training &amp; Programs · AI Review &amp; Assessment</p>
           <p class="copy-email-row">
             <a href="mailto:dheiver.santos@mangaba.ia.br">dheiver.santos@mangaba.ia.br</a>
-            <button type="button" class="copy-btn" data-tippy-content="Copy email" @click="navigator.clipboard.writeText('dheiver.santos@mangaba.ia.br').catch(() => {}); copied = true; setTimeout(() => copied = false, 2000)" :aria-label="copied ? 'Copied' : 'Copy email'">
-              <svg x-show="!copied" viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M4 13V4.5A1.5 1.5 0 0 1 5.5 3H13"/></svg>
-              <svg x-show="copied" x-cloak viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 10.5 8 14l8-8"/></svg>
+            <button type="button" class="copy-btn" id="copy-email-btn" title="Copy email" aria-label="Copy email">
+              <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M4 13V4.5A1.5 1.5 0 0 1 5.5 3H13"/></svg>
+              <svg hidden viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 10.5 8 14l8-8"/></svg>
             </button>
           </p>
         </div>
@@ -399,27 +399,19 @@
       <div class="footer-bottom">
         <span>&copy; 2026 by Dheiver Santos, PhD</span>
         <div class="footer-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Accessibility Statement</a>
-          <a href="#">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
         </div>
       </div>
       <p class="photo-credit">Photos: <a href="https://www.flickr.com/photos/46982319@N06/4894730690" target="_blank" rel="noopener noreferrer">Official GDC</a>, <a href="https://www.flickr.com/photos/163837264@N07/43291332124" target="_blank" rel="noopener noreferrer">Semtrio</a> and <a href="https://www.flickr.com/photos/clender/3706444821/" target="_blank" rel="noopener noreferrer">Carl Lender</a>, licensed <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>.</p>
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/5551989889898" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" data-tippy-content="Chat on WhatsApp"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.33.638 4.51 1.748 6.377L3 29l7.278-2.208A12.44 12.44 0 0 0 16.001 28C22.905 28 28.5 22.404 28.5 15.5S22.905 3 16.001 3Zm0 22.727c-1.98 0-3.878-.53-5.53-1.53l-.397-.235-4.318 1.31 1.334-4.21-.26-.42a10.19 10.19 0 0 1-1.603-5.442c0-5.658 4.605-10.263 10.274-10.263 5.658 0 10.263 4.605 10.263 10.263 0 5.669-4.605 10.527-10.263 10.527Zm5.632-7.688c-.31-.155-1.831-.904-2.114-1.007-.284-.104-.49-.155-.697.155-.207.31-.8 1.007-.98 1.214-.18.207-.362.233-.671.078-.31-.155-1.309-.483-2.494-1.54-.922-.822-1.545-1.837-1.726-2.147-.18-.31-.02-.478.136-.633.14-.14.31-.362.465-.543.155-.18.207-.31.31-.517.104-.207.052-.388-.026-.543-.078-.155-.697-1.68-.955-2.301-.252-.605-.508-.523-.697-.533-.18-.008-.388-.01-.595-.01-.207 0-.543.078-.827.388-.284.31-1.084 1.06-1.084 2.585 0 1.526 1.11 3 1.265 3.207.155.207 2.185 3.335 5.293 4.677.74.319 1.317.51 1.767.653.742.236 1.418.203 1.952.123.596-.089 1.831-.749 2.089-1.472.258-.723.258-1.343.18-1.472-.077-.129-.284-.207-.594-.362Z"/></svg></a>
+  <a class="wa-float" href="https://wa.me/5551989889898" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.096 3 3.5 8.596 3.5 15.5c0 2.33.638 4.51 1.748 6.377L3 29l7.278-2.208A12.44 12.44 0 0 0 16.001 28C22.905 28 28.5 22.404 28.5 15.5S22.905 3 16.001 3Zm0 22.727c-1.98 0-3.878-.53-5.53-1.53l-.397-.235-4.318 1.31 1.334-4.21-.26-.42a10.19 10.19 0 0 1-1.603-5.442c0-5.658 4.605-10.263 10.274-10.263 5.658 0 10.263 4.605 10.263 10.263 0 5.669-4.605 10.527-10.263 10.527Zm5.632-7.688c-.31-.155-1.831-.904-2.114-1.007-.284-.104-.49-.155-.697.155-.207.31-.8 1.007-.98 1.214-.18.207-.362.233-.671.078-.31-.155-1.309-.483-2.494-1.54-.922-.822-1.545-1.837-1.726-2.147-.18-.31-.02-.478.136-.633.14-.14.31-.362.465-.543.155-.18.207-.31.31-.517.104-.207.052-.388-.026-.543-.078-.155-.697-1.68-.955-2.301-.252-.605-.508-.523-.697-.533-.18-.008-.388-.01-.595-.01-.207 0-.543.078-.827.388-.284.31-1.084 1.06-1.084 2.585 0 1.526 1.11 3 1.265 3.207.155.207 2.185 3.335 5.293 4.677.74.319 1.317.51 1.767.653.742.236 1.418.203 1.952.123.596-.089 1.831-.749 2.089-1.472.258-.723.258-1.343.18-1.472-.077-.129-.284-.207-.594-.362Z"/></svg></a>
 
-  <!-- Modern UI libraries (CDN, no build step) -->
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.umd.js"></script>
-  <script src="https://unpkg.com/@popperjs/core@2"></script>
-  <script src="https://unpkg.com/tippy.js@6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1/dist/confetti.browser.min.js"></script>
-  <script src="https://unpkg.com/alpinejs@3/dist/cdn.min.js" defer></script>
+  <script src="assets/vendor/glightbox.min.js"></script>
+  <script src="assets/vendor/splide.min.js"></script>
+  <script src="assets/vendor/splide-auto-scroll.min.js"></script>
 
   <script>
     document.getElementById("lang-select").addEventListener("change", (e) => {
@@ -444,17 +436,7 @@
 
     const prefersReducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    // 1. Lenis — smooth inertia scrolling site-wide
-    let lenis = null;
-    if (typeof Lenis !== "undefined" && !prefersReducedMotion) {
-      lenis = new Lenis({ duration: 1.1, smoothWheel: true });
-      const raf = (t) => { lenis.raf(t); requestAnimationFrame(raf); };
-      requestAnimationFrame(raf);
-    }
-
-    // Header shadow, scrollspy, and progress bar — unified handler.
-    // Lenis intercepts native scroll, so it fires its own "scroll" event
-    // instead of the browser's; fall back to the native one if Lenis is off.
+    // Header shadow, scrollspy, and progress bar
     const hdr = document.querySelector(".site-header");
     const progressBar = document.getElementById("scroll-progress");
     const spyMap = [["#contact","contact"],["#about","blindspot"],["#services","how"]];
@@ -475,12 +457,7 @@
       }
       navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === active));
     }
-
-    if (lenis) {
-      lenis.on("scroll", handleScroll);
-    } else {
-      addEventListener("scroll", handleScroll, { passive: true });
-    }
+    addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
 
     // Scroll-reveal
@@ -493,52 +470,50 @@
       revealEls.forEach(el => io.observe(el));
     }
 
-    // Smooth in-page anchor scrolling with sticky-header offset (uses Lenis when available)
+    // Smooth in-page anchor scrolling with sticky-header offset
     document.querySelectorAll('a[href^="#"]').forEach(link => {
       link.addEventListener("click", (e) => {
         const id = link.getAttribute("href").slice(1);
         const target = id ? document.getElementById(id) : document.body;
         if (!target) return;
         e.preventDefault();
-        const headerH = document.querySelector(".site-header").offsetHeight;
-        if (lenis) {
-          lenis.scrollTo(target, { offset: -headerH - 12 });
-        } else {
-          const top = target.getBoundingClientRect().top + window.scrollY - headerH - 12;
-          window.scrollTo({ top, behavior: "smooth" });
-        }
+        const headerH = hdr.offsetHeight;
+        const top = target.getBoundingClientRect().top + window.scrollY - headerH - 12;
+        window.scrollTo({ top, behavior: prefersReducedMotion ? "auto" : "smooth" });
         history.pushState(null, "", link.getAttribute("href"));
       });
     });
 
-    // 2–3. GLightbox — click-to-zoom on collage & speaking photos
+    // GLightbox — click-to-zoom on photos
     if (typeof GLightbox !== "undefined") {
       GLightbox({ selector: ".glightbox", touchNavigation: true, loop: true });
     }
 
-    // 4. CountUp.js — animated Impact stats, triggered on scroll into view
-    if (typeof countUp !== "undefined" && "IntersectionObserver" in window) {
-      const counters = document.querySelectorAll("[data-cu-end]");
+    // Animated Impact stats (vanilla count-up), triggered on scroll into view
+    const counters = document.querySelectorAll("[data-cu-end]");
+    const renderCount = (el) => {
+      const end = Number(el.dataset.cuEnd), suffix = el.dataset.cuSuffix || "";
+      if (prefersReducedMotion) { el.textContent = end + suffix; return; }
+      const t0 = performance.now(), dur = 2000;
+      const step = (t) => {
+        const p = Math.min((t - t0) / dur, 1);
+        el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))) + suffix;
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    if ("IntersectionObserver" in window) {
       const cuIo = new IntersectionObserver(entries => entries.forEach(entry => {
         if (!entry.isIntersecting) return;
-        const el = entry.target;
-        const suffix = el.dataset.cuSuffix || "";
-        const cu = new countUp.CountUp(el, Number(el.dataset.cuEnd), {
-          duration: prefersReducedMotion ? 0 : 2,
-          suffix,
-        });
-        if (!cu.error) cu.start();
-        cuIo.unobserve(el);
+        renderCount(entry.target);
+        cuIo.unobserve(entry.target);
       }), { threshold: 0.5 });
       counters.forEach(el => cuIo.observe(el));
+    } else {
+      counters.forEach(el => { el.textContent = el.dataset.cuEnd + (el.dataset.cuSuffix || ""); });
     }
 
-    // 5–6. Tippy.js — styled tooltips on logo grid + WhatsApp float button
-    if (typeof tippy !== "undefined") {
-      tippy("[data-tippy-content]", { theme: "dheiver", animation: "shift-away", delay: [150, 0] });
-    }
-
-    // 7. Splide — auto-scrolling infinite marquee for the credentials logo strip
+    // Splide — auto-scrolling infinite marquee for the credentials logo strip
     if (typeof Splide !== "undefined") {
       new Splide("#logo-splide", {
         type: "loop",
@@ -552,19 +527,49 @@
       }).mount(window.splide?.Extensions || {});
     }
 
-    // Formulário local: sem backend — apenas confirmação visual.
-    for (const [formId, msgId] of [["newsletter-form", "nl-success"]]) {
-      const form = document.getElementById(formId);
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        document.getElementById(msgId).style.display = "block";
-        form.querySelectorAll("input, textarea").forEach(el => { if (el.type !== "submit") el.value = ""; });
-        // 10. Confetti micro-interaction on successful subscribe
-        if (typeof confetti !== "undefined" && !prefersReducedMotion) {
-          confetti({ particleCount: 80, spread: 65, origin: { y: 0.7 }, colors: ["#0e0e0e", "#4a4a4a", "#e4e2de"] });
-        }
+    // Copy-email button
+    const copyBtn = document.getElementById("copy-email-btn");
+    if (copyBtn) {
+      const [iconCopy, iconOk] = copyBtn.querySelectorAll("svg");
+      copyBtn.addEventListener("click", () => {
+        navigator.clipboard.writeText("dheiver.santos@mangaba.ia.br").catch(() => {});
+        iconCopy.hidden = true; iconOk.hidden = false;
+        setTimeout(() => { iconCopy.hidden = false; iconOk.hidden = true; }, 2000);
       });
     }
+
+    // Newsletter — real subscription via FormSubmit (AJAX)
+    const NL_ERR = {
+      en: "Something went wrong. Please email dheiver.santos@mangaba.ia.br instead.",
+      "pt-BR": "Algo deu errado. Escreva direto para dheiver.santos@mangaba.ia.br.",
+      es: "Algo sali\u00f3 mal. Escr\u00edbenos a dheiver.santos@mangaba.ia.br.",
+    };
+    const nlForm = document.getElementById("newsletter-form");
+    nlForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const msg = document.getElementById("nl-success");
+      const btn = nlForm.querySelector('button[type="submit"]');
+      const email = document.getElementById("nl-email").value;
+      const okText = msg.textContent;
+      btn.disabled = true;
+      try {
+        const res = await fetch("https://formsubmit.co/ajax/dheiver.santos@mangaba.ia.br", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({ email, _subject: "Newsletter subscription — dheiverphd.com", _template: "table" }),
+        });
+        if (!res.ok) throw new Error(res.status);
+        msg.textContent = okText;
+        msg.style.display = "block";
+        nlForm.reset();
+      } catch {
+        msg.textContent = NL_ERR[document.documentElement.lang] || NL_ERR.en;
+        msg.style.display = "block";
+      } finally {
+        btn.disabled = false;
+      }
+    });
   </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
