@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fine-Tuning de LLM para Empresas — Modelo de IA Proprietário | Dheiver Santos, PhD</title>
+  <meta name="description" content="Fine-tuning corporativo de LLM (LoRA ou completo) com seus próprios dados. Tenha um modelo de IA proprietário na sua infraestrutura, independente das APIs das Big Techs.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="canonical" href="https://dheiverphd.com/fine-tuning-pt.html">
+  <link rel="alternate" hreflang="en" href="https://dheiverphd.com/fine-tuning.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://dheiverphd.com/fine-tuning-pt.html">
+  <link rel="alternate" hreflang="x-default" href="https://dheiverphd.com/fine-tuning.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fine-Tuning de LLM para Empresas — Modelo de IA Proprietário | Dheiver Santos, PhD">
+  <meta property="og:description" content="Fine-tuning corporativo de LLM (LoRA ou completo) com seus próprios dados. Tenha um modelo de IA proprietário na sua infraestrutura, independente das APIs das Big Techs.">
+  <meta property="og:url" content="https://dheiverphd.com/fine-tuning-pt.html">
+  <meta property="og:image" content="https://dheiverphd.com/assets/og-image-pt.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Treinamento e Fine-Tuning de Modelos de IA", "serviceType": "Fine-Tuning de Modelos de IA", "description": "Fine-tuning corporativo de LLM (LoRA ou completo) com seus próprios dados. Tenha um modelo de IA proprietário na sua infraestrutura, independente das APIs das Big Techs.", "url": "https://dheiverphd.com/fine-tuning-pt.html", "provider": {"@type": "Person", "name": "Dheiver Santos", "honorificSuffix": "PhD", "url": "https://dheiverphd.com/"}, "areaServed": "BR", "availableLanguage": ["pt-BR", "en", "es"]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Fine-tuning é melhor que RAG ou engenharia de prompt?", "acceptedAnswer": {"@type": "Answer", "text": "Resolvem problemas diferentes. RAG injeta conhecimento na hora da consulta; fine-tuning muda como o modelo escreve, raciocina e segue as convenções do seu domínio. Muitos sistemas em produção combinam os dois — ajudamos a escolher pelo seu caso, não pelo hype."}}, {"@type": "Question", "name": "De quantos dados precisamos?", "acceptedAnswer": {"@type": "Answer", "text": "Um fine-tuning útil pode começar com alguns milhares de exemplos de alta qualidade. Qualidade e consistência importam muito mais que volume bruto; a auditoria de dados mostra exatamente onde você está antes de investir."}}, {"@type": "Question", "name": "O modelo roda sem enviar dados a terceiros?", "acceptedAnswer": {"@type": "Answer", "text": "Sim — esse é o ponto. O modelo ajustado roda nos seus servidores ou nuvem privada. Nenhum prompt ou documento sai da sua infraestrutura."}}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dheiverphd.com/pt.html"}, {"@type": "ListItem", "position": 2, "name": "Fine-Tuning de LLM: um modelo de IA proprietário que a sua empresa realmente possui", "item": "https://dheiverphd.com/fine-tuning-pt.html"}]}</script>
+  <style>
+    .svc { max-width: 820px; margin: 0 auto; padding: 5.5rem 1.5rem 4rem; }
+    .svc h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15; margin-bottom: 1rem; }
+    .svc .lead { font-size: 1.15rem; color: #333; }
+    .svc h2 { font-size: 1.3rem; margin: 2.75rem 0 1rem; }
+    .svc p, .svc li { line-height: 1.75; color: #3a3a3a; }
+    .svc ul, .svc ol { padding-left: 1.4rem; }
+    .svc li { margin-bottom: .6rem; }
+    .svc .crumb { display: inline-block; margin-bottom: 2rem; font-size: .95rem; }
+    .svc .cta-row { margin: 2.5rem 0; display: flex; gap: 1rem; flex-wrap: wrap; }
+    .svc .others { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid #ddd; font-size: .95rem; color: #666; }
+    .svc .faq-item { border-bottom: 1px solid #e2e0dc; }
+    .svc .faq-item summary { padding: 1rem 0; cursor: pointer; font-weight: 600; }
+    .svc .faq-item p { padding: 0 0 1.25rem; }
+  </style>
+</head>
+<body>
+  <main class="svc">
+    <a class="crumb" href="pt.html">&larr; Dheiver Santos, PhD</a>
+    <h1>Fine-Tuning de LLM: um modelo de IA proprietário que a sua empresa realmente possui</h1>
+    <p class="lead">APIs de prateleira fazem toda empresa soar igual — e roteiam seus dados por uma infraestrutura que você não controla.</p>
+    <p>Fazemos fine-tuning e treinamento de modelos de linguagem com os dados, o vocabulário e os fluxos de trabalho da sua organização. O resultado é um modelo implantado na sua infraestrutura — on-premise ou nuvem privada — independente de preços, limites e mudanças de política das Big Techs. O trabalho é conduzido pessoalmente por Dheiver Santos, PhD, engenheiro de machine learning com experiência sênior de indústria (SX Negócios, Grupo Boticário) e criador do framework open-source Mangaba.AI.</p>
+    <h2>O que você recebe</h2>
+    <ul>
+        <li>Preparação de dados: limpeza, estruturação e conversão do conhecimento interno em datasets de treino.</li>
+        <li>Fine-tuning com LoRA ou treinamento completo, escolhido pelo seu volume de dados, orçamento e requisitos de privacidade.</li>
+        <li>Avaliação rigorosa contra os seus casos de uso reais — não benchmarks genéricos.</li>
+        <li>Orientação de deploy para inferência on-premise ou em nuvem privada (inclusive modelos GGUF quantizados em hardware modesto).</li>
+        <li>Trilha de capacitação prática para o seu time técnico manter e evoluir o modelo.</li>
+    </ul>
+    <h2>Como funciona</h2>
+    <ol>
+        <li><strong>Conversa de escopo</strong> — mapeamos caso de uso, fontes de dados e restrições de privacidade.</li>
+        <li><strong>Auditoria de dados</strong> — avaliamos se seus dados sustentam o fine-tuning e que preparação exigem.</li>
+        <li><strong>Treino e avaliação</strong> — rodadas iterativas de fine-tuning com métricas verificáveis.</li>
+        <li><strong>Entrega</strong> — deploy na sua infraestrutura e treinamento do time.</li>
+    </ol>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="mailto:dheiver.santos@mangaba.ia.br?subject=Projeto%20de%20Fine-Tuning">Falar sobre fine-tuning</a>
+      <a class="btn btn-outline" href="https://wa.me/5551989889898" target="_blank" rel="noopener noreferrer">Conversar no WhatsApp</a>
+    </div>
+    <h2>Perguntas frequentes</h2>
+      <details class="faq-item">
+        <summary>Fine-tuning é melhor que RAG ou engenharia de prompt?</summary>
+        <p>Resolvem problemas diferentes. RAG injeta conhecimento na hora da consulta; fine-tuning muda como o modelo escreve, raciocina e segue as convenções do seu domínio. Muitos sistemas em produção combinam os dois — ajudamos a escolher pelo seu caso, não pelo hype.</p>
+      </details>
+      <details class="faq-item">
+        <summary>De quantos dados precisamos?</summary>
+        <p>Um fine-tuning útil pode começar com alguns milhares de exemplos de alta qualidade. Qualidade e consistência importam muito mais que volume bruto; a auditoria de dados mostra exatamente onde você está antes de investir.</p>
+      </details>
+      <details class="faq-item">
+        <summary>O modelo roda sem enviar dados a terceiros?</summary>
+        <p>Sim — esse é o ponto. O modelo ajustado roda nos seus servidores ou nuvem privada. Nenhum prompt ou documento sai da sua infraestrutura.</p>
+      </details>
+    <p class="others">Outros serviços: <a href="ai-review-pt.html">Auditoria de Riscos de IA</a> · <a href="treinamento-executivo-pt.html">Treinamento Executivo em IA</a></p>
+  </main>
+</body>
+</html>

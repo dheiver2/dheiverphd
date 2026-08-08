@@ -28,4 +28,52 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://dheiverphd.com/fine-tuning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dheiverphd.com/fine-tuning.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dheiverphd.com/fine-tuning-pt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dheiverphd.com/fine-tuning.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dheiverphd.com/fine-tuning-pt.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dheiverphd.com/fine-tuning.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dheiverphd.com/fine-tuning-pt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dheiverphd.com/fine-tuning.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dheiverphd.com/ai-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dheiverphd.com/ai-review.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dheiverphd.com/ai-review-pt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dheiverphd.com/ai-review.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dheiverphd.com/ai-review-pt.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dheiverphd.com/ai-review.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dheiverphd.com/ai-review-pt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dheiverphd.com/ai-review.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dheiverphd.com/executive-training.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dheiverphd.com/executive-training.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dheiverphd.com/treinamento-executivo-pt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dheiverphd.com/executive-training.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dheiverphd.com/treinamento-executivo-pt.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dheiverphd.com/executive-training.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://dheiverphd.com/treinamento-executivo-pt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dheiverphd.com/executive-training.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
