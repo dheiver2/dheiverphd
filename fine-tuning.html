@@ -57,7 +57,9 @@
         <li><strong>Handover</strong> — deployment on your infrastructure plus team training.</li>
     </ol>
     <div class="cta-row">
-      <a class="btn btn-solid" href="mailto:dheiver.santos@mangaba.ia.br?subject=Fine-Tuning%20Project">Talk fine-tuning</a>
+      <!-- TODO(P0.1): replace CAL_URL with the real Cal.com event link -->
+      <a class="btn btn-solid" href="https://cal.com/dheiver-santos/ai-review-briefing?utm_source=dheiverphd&utm_medium=service&utm_campaign=briefing&utm_content=fine-tuning" target="_blank" rel="noopener" data-track="cta-service-briefing">Book a 20-min Briefing</a>
+      <a class="btn btn-outline" href="mailto:dheiver.santos@mangaba.ia.br?subject=Fine-Tuning%20Project">Talk fine-tuning</a>
       <a class="btn btn-outline" href="https://wa.me/5551989889898" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
     </div>
     <h2>Frequently asked questions</h2>
@@ -75,5 +77,17 @@
       </details>
     <p class="others">Other services: <a href="ai-review.html">AI Review & Assessment</a> · <a href="executive-training.html">Executive AI Training</a></p>
   </main>
+  <script>
+    // P0.4 — conversion tracking (Plausible when loaded; otherwise no-op).
+    function track(name, props) {
+      try {
+        if (typeof window.plausible === "function") window.plausible(name, { props: props || {} });
+      } catch { /* tracking must never break UX */ }
+    }
+    document.querySelectorAll("[data-track]").forEach((el) => {
+      el.addEventListener("click", () => track(el.getAttribute("data-track")));
+    });
+  </script>
+  <script defer data-domain="dheiverphd.com" src="https://plausible.io/js/script.js"></script>
 </body>
 </html>

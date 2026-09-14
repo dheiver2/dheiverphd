@@ -57,7 +57,9 @@
         <li><strong>Entrega</strong> — deploy na sua infraestrutura e treinamento do time.</li>
     </ol>
     <div class="cta-row">
-      <a class="btn btn-solid" href="mailto:dheiver.santos@mangaba.ia.br?subject=Projeto%20de%20Fine-Tuning">Falar sobre fine-tuning</a>
+      <!-- TODO(P0.1): trocar CAL_URL pelo link real do Cal.com -->
+      <a class="btn btn-solid" href="https://cal.com/dheiver-santos/ai-review-briefing?utm_source=dheiverphd&utm_medium=service&utm_campaign=briefing&utm_content=fine-tuning-pt" target="_blank" rel="noopener" data-track="cta-service-briefing">Agendar 20 min Gratuitos</a>
+      <a class="btn btn-outline" href="mailto:dheiver.santos@mangaba.ia.br?subject=Projeto%20de%20Fine-Tuning">Falar sobre fine-tuning</a>
       <a class="btn btn-outline" href="https://wa.me/5551989889898" target="_blank" rel="noopener noreferrer">Conversar no WhatsApp</a>
     </div>
     <h2>Perguntas frequentes</h2>
@@ -75,5 +77,17 @@
       </details>
     <p class="others">Outros serviços: <a href="ai-review-pt.html">Auditoria de Riscos de IA</a> · <a href="treinamento-executivo-pt.html">Treinamento Executivo em IA</a></p>
   </main>
+  <script>
+    // P0.4 — tracking de conversão (Plausible quando carregado; senão no-op).
+    function track(name, props) {
+      try {
+        if (typeof window.plausible === "function") window.plausible(name, { props: props || {} });
+      } catch { /* tracking nunca pode quebrar a UX */ }
+    }
+    document.querySelectorAll("[data-track]").forEach((el) => {
+      el.addEventListener("click", () => track(el.getAttribute("data-track")));
+    });
+  </script>
+  <script defer data-domain="dheiverphd.com" src="https://plausible.io/js/script.js"></script>
 </body>
 </html>

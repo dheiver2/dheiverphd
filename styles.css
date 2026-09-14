@@ -477,6 +477,7 @@ p { text-wrap: pretty; }
   .contact-emails a:hover { text-decoration: underline; }
   .text-link:hover { opacity: 0.7; }
 }
+.contact-cta-row { margin: 0 0 28px; }
 .contact-note { margin-top: 26px; color: var(--gray-text); }
 
 .field { margin-bottom: 22px; display: flex; flex-direction: column; }
