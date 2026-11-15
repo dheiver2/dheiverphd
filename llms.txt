@@ -1,6 +1,6 @@
 # Dheiver Santos, PhD
 
-> Independent AI advisor based in Brazil. PhD in Chemical Engineering with emphasis on Artificial Intelligence (UFBA/UFRJ), postdoctoral research at UNICAMP/UNIT (CNPq) and UFAL (FUNDEPES). Senior Staff Machine Learning Engineer at SX Negócios; former Senior Scientist at Grupo Boticário (GAVB); professor of AI, distributed systems and data science at UPE and Estácio. Creator of Mangaba.AI (open-source framework for autonomous AI agent teams) and founder of Cognai (AI healthtech for cardiology). 550+ academic citations, h-index 12.
+> Independent AI advisor based in Brazil. PhD in Chemical Engineering with emphasis on Artificial Intelligence (UFBA/UFRJ), postdoctoral research at UNICAMP/UNIT (CNPq) and UFAL (FUNDEPES). Senior Staff Machine Learning Engineer at SX Negócios; former Senior Scientist at Grupo Boticário (GAVB); professor of AI, distributed systems and data science at UPE and Estácio. Founder of DS Consultoria and Mangaba AI, creator of Mangaba.AI (open-source framework for autonomous AI agent teams) and founder of Cognai (AI healthtech for cardiology). Research: self-supervised learning (JEPA), LLM training (PEFT, distillation, preference optimization, RL for reasoning) and AI for healthcare (ECG, medical imaging, clinical risk prediction). 580+ academic citations, h-index 12. Reviewer for the Journal of Chemical & Engineering Data and Energy & Fuels.
 
 ## Services
 
