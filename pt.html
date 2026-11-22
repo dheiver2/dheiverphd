@@ -62,15 +62,37 @@
     "knowsAbout": ["Artificial Intelligence", "Machine Learning", "AI Fine-Tuning", "Executive AI Training", "AI Risk Assessment"]
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" href="assets/fonts/poppins-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="assets/vendor/glightbox.min.css">
   <link rel="stylesheet" href="assets/vendor/splide-core.min.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "O que faz um consultor independente de IA?", "acceptedAnswer": {"@type": "Answer", "text": "Um consultor independente de IA avalia como sua organização usa IA — modelos, processos e supervisão humana — sem vender software ou plataforma. O único produto é uma visão precisa da sua exposição real, além de treinamento para sua equipe agir sobre ela."}}, {"@type": "Question", "name": "O que é fine-tuning de modelos de IA corporativos?", "acceptedAnswer": {"@type": "Answer", "text": "Fine-tuning adapta um modelo de linguagem aos dados, vocabulário e processos da sua empresa, gerando um modelo proprietário que roda na sua própria infraestrutura — independente de preços, limites e mudanças de política das big techs. Usamos LoRA ou fine-tuning completo conforme o caso."}}, {"@type": "Question", "name": "Como funciona a Análise e Avaliação de IA?", "acceptedAnswer": {"@type": "Answer", "text": "É uma avaliação estruturada por entrevistas, revisão de processos e análise de documentação — sem necessidade de acesso ao código. O produto final é um mapa de riscos específico, priorizado e acionável, com relatório escrito, apresentação e sessão de acompanhamento."}}, {"@type": "Question", "name": "Quem é Dheiver Santos?", "acceptedAnswer": {"@type": "Answer", "text": "Dheiver Santos, PhD, é engenheiro de machine learning e pesquisador de IA, doutor em Engenharia Química com ênfase em IA (UFBA/UFRJ), criador do framework open-source Mangaba.AI e fundador da healthtech Cognai. Tem mais de 580 citações acadêmicas e experiência na SX Negócios e no Grupo Boticário."}}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Dheiver Santos, PhD — Independent AI Advisory", "url": "https://dheiverphd.com/", "founder": {"@type": "Person", "name": "Dheiver Santos", "honorificSuffix": "PhD"}, "email": "dheiver.santos@mangaba.ia.br", "areaServed": "BR", "availableLanguage": ["pt-BR", "en", "es"], "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Executive Training & Programs", "url": "https://dheiverphd.com/executive-training.html"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Review & Assessment", "url": "https://dheiverphd.com/ai-review.html"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom AI Model Training & Fine-Tuning", "url": "https://dheiverphd.com/fine-tuning.html"}}]}</script>
+  <!-- Google Ads tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17324759362"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17324759362');
+    // Conversão de lead: clique em WhatsApp, agendamento (cal.com) ou e-mail.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a) return;
+      var h = a.getAttribute('href') || '';
+      if (/wa\.me|api\.whatsapp\.com|cal\.com\/|^mailto:/i.test(h)) {
+        try {
+          gtag('event', 'conversion', {
+            send_to: 'AW-17324759362/HZLhCInitr0dEMKyi8VA',
+            value: 1.0,
+            currency: 'BRL',
+            transport_type: 'beacon'
+          });
+        } catch (err) { /* tracking nunca pode quebrar a UX */ }
+      }
+    }, true);
+  </script>
 </head>
 <body>
   <div class="scroll-progress" id="scroll-progress"></div>
@@ -79,7 +101,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="#top">
-        <img class="brand-logo" src="assets/logo-ds.png" alt="Dheiver Santos logo" width="32" height="32">
+        <img class="brand-logo" src="assets/logo-ds.webp" alt="Dheiver Santos logo" width="32" height="32">
         <span>Dheiver Santos, PhD</span>
       </a>
       <div class="header-right">
@@ -133,17 +155,17 @@
         <div class="logo-marquee splide" id="logo-splide">
           <div class="splide__track">
             <ul class="splide__list">
-            <li class="splide__slide"><img src="assets/logos/ufba.png" alt="UFBA — Universidade Federal da Bahia" title="UFBA — Universidade Federal da Bahia" width="65" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/ufrj.svg" alt="UFRJ — Universidade Federal do Rio de Janeiro" title="UFRJ — Universidade Federal do Rio de Janeiro" width="86" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/ufba.webp" alt="UFBA — Universidade Federal da Bahia" title="UFBA — Universidade Federal da Bahia" width="65" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/ufrj.webp" alt="UFRJ — Universidade Federal do Rio de Janeiro" title="UFRJ — Universidade Federal do Rio de Janeiro" width="86" height="100" loading="lazy" decoding="async"></li>
             <li class="splide__slide"><img src="assets/logos/unicamp.svg" alt="UNICAMP — Universidade Estadual de Campinas" title="UNICAMP — Universidade Estadual de Campinas" width="130" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/ufal.png" alt="UFAL — Universidade Federal de Alagoas" title="UFAL — Universidade Federal de Alagoas" width="100" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/upe.png" alt="UPE — Universidade de Pernambuco" title="UPE — Universidade de Pernambuco" width="225" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/estacio.png" alt="Estácio" title="Estácio" width="347" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/boticario.png" alt="Grupo Boticário" title="Grupo Boticário" width="298" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/ufal.webp" alt="UFAL — Universidade Federal de Alagoas" title="UFAL — Universidade Federal de Alagoas" width="100" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/upe.webp" alt="UPE — Universidade de Pernambuco" title="UPE — Universidade de Pernambuco" width="225" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/estacio.webp" alt="Estácio" title="Estácio" width="347" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/boticario.webp" alt="Grupo Boticário" title="Grupo Boticário" width="298" height="100" loading="lazy" decoding="async"></li>
             <li class="splide__slide"><img src="assets/logos/petrobras.svg" alt="Petrobras" title="Petrobras" width="120" height="100" loading="lazy" decoding="async"></li>
             <li class="splide__slide"><img src="assets/logos/santander.svg" alt="Santander" title="Santander" width="130" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/sergipetec.png" alt="SergipeTec — Sergipe Parque Tecnológico" title="SergipeTec — Sergipe Parque Tecnológico" width="280" height="100" loading="lazy" decoding="async"></li>
-            <li class="splide__slide"><img src="assets/logos/itp.png" alt="ITP — Instituto de Tecnologia e Pesquisa (NUESC)" title="ITP — Instituto de Tecnologia e Pesquisa (NUESC)" width="227" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/sergipetec.webp" alt="SergipeTec — Sergipe Parque Tecnológico" title="SergipeTec — Sergipe Parque Tecnológico" width="280" height="100" loading="lazy" decoding="async"></li>
+            <li class="splide__slide"><img src="assets/logos/itp.webp" alt="ITP — Instituto de Tecnologia e Pesquisa (NUESC)" title="ITP — Instituto de Tecnologia e Pesquisa (NUESC)" width="227" height="100" loading="lazy" decoding="async"></li>
             <li class="splide__slide"><img src="assets/logos/latinoware.svg" alt="Latinoware — 23º Congresso Latino-americano de Software Livre e Tecnologias Abertas" title="Latinoware — 23º Congresso Latino-americano de Software Livre e Tecnologias Abertas" width="180" height="70" loading="lazy" decoding="async"></li>
             <li class="splide__slide"><span class="logo-text">SX Negócios</span></li>
             </ul>
@@ -289,7 +311,7 @@
     <section class="products">
       <div class="wrap">
         <h2>Produtos Criados</h2>
-        <p class="section-sub">Trabalhos selecionados — cinco de dez produtos de IA entregues em fluxos clínicos e operacionais reais.</p>
+        <p class="section-sub">Trabalhos selecionados — oito de dez produtos de IA entregues em fluxos clínicos e operacionais reais.</p>
         <div class="products-grid">
           <article class="product-card">
             <a href="assets/prod-surgical-instrument-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Detecção de Instrumentos Cirúrgicos"><picture><source type="image/webp" srcset="assets/prod-surgical-instrument-detection-560.webp 560w, assets/prod-surgical-instrument-detection.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/prod-surgical-instrument-detection.jpg" alt="Modelo de IA segmentando e rastreando instrumentos cirúrgicos em uma bandeja" width="900" height="540" loading="lazy" decoding="async"></picture></a>
@@ -324,6 +346,27 @@
             <div class="prod-body">
               <h3>Contagem de Células Sanguíneas</h3>
               <p class="prod-desc">Análise de imagens de microscopia detecta e conta leucócitos automaticamente, acelerando a triagem laboratorial.</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="assets/prod-brain-tumor-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Detecção de Tumor Cerebral"><picture><source type="image/webp" srcset="assets/prod-brain-tumor-detection-560.webp 560w, assets/prod-brain-tumor-detection.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/prod-brain-tumor-detection.jpg" alt="Modelo de IA localizando um tumor cerebral em uma ressonância magnética com índice de confiança" width="900" height="540" loading="lazy" decoding="async"></picture></a>
+            <div class="prod-body">
+              <h3>Detecção de Tumor Cerebral</h3>
+              <p class="prod-desc">Detecção de objetos em cortes de ressonância e tomografia localiza tumores suspeitos com índice de confiança, priorizando exames para o radiologista.</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="assets/prod-medical-pills-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Inspeção de Comprimidos"><picture><source type="image/webp" srcset="assets/prod-medical-pills-detection-560.webp 560w, assets/prod-medical-pills-detection.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/prod-medical-pills-detection.jpg" alt="Modelo de IA detectando e contando comprimidos em uma superfície de produção" width="900" height="540" loading="lazy" decoding="async"></picture></a>
+            <div class="prod-body">
+              <h3>Inspeção de Comprimidos</h3>
+              <p class="prod-desc">Detecção em tempo real conta e inspeciona cada comprimido na linha, apoiando o controle de qualidade, a triagem e a conferência na dispensação.</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="assets/prod-polyp-detection.jpg" class="glightbox" data-gallery="products" data-glightbox="title: Detecção de Pólipos na Colonoscopia"><picture><source type="image/webp" srcset="assets/prod-polyp-detection-560.webp 560w, assets/prod-polyp-detection.webp 1200w" sizes="(min-width: 700px) 50vw, 100vw"><img src="assets/prod-polyp-detection.jpg" alt="Modelo de IA destacando um pólipo durante um exame de colonoscopia" width="900" height="540" loading="lazy" decoding="async"></picture></a>
+            <div class="prod-body">
+              <h3>Detecção de Pólipos na Colonoscopia</h3>
+              <p class="prod-desc">Análise do vídeo endoscópico sinaliza pólipos enquanto o aparelho avança, um segundo olhar que ajuda a reduzir lesões não detectadas.</p>
             </div>
           </article>
         </div>
@@ -387,9 +430,9 @@
           <h2>Conecte-se Conosco</h2>
           <p class="newsletter-label">Insights sobre riscos de IA para tomadores de decisão. Sem spam, sem enrolação.</p>
           <div class="social">
-            <a href="https://www.youtube.com/@dheiver" aria-label="YouTube"><img src="assets/icon-youtube.png" alt="YouTube"></a>
-            <a href="https://www.linkedin.com/in/dheiver-santos" aria-label="LinkedIn"><img src="assets/icon-linkedin.png" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/santos.dheiver/" aria-label="Instagram"><img src="assets/icon-instagram.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@dheiver" aria-label="YouTube"><img src="assets/icon-youtube.png" alt="YouTube" width="34" height="34" loading="lazy" decoding="async"></a>
+            <a href="https://www.linkedin.com/in/dheiver-santos" aria-label="LinkedIn"><img src="assets/icon-linkedin.png" alt="LinkedIn" width="34" height="34" loading="lazy" decoding="async"></a>
+            <a href="https://www.instagram.com/santos.dheiver/" aria-label="Instagram"><img src="assets/icon-instagram.png" alt="Instagram" width="34" height="34" loading="lazy" decoding="async"></a>
           </div>
         </div>
         <form class="newsletter" id="newsletter-form">
@@ -551,10 +594,19 @@
     if (copyBtn) {
       const [iconCopy, iconOk] = copyBtn.querySelectorAll("svg");
       copyBtn.addEventListener("click", () => {
-        navigator.clipboard.writeText("dheiver.santos@mangaba.ia.br").catch(() => {});
-        track("copy_email");
-        iconCopy.hidden = true; iconOk.hidden = false;
-        setTimeout(() => { iconCopy.hidden = false; iconOk.hidden = true; }, 2000);
+        const show = (ok) => { iconCopy.toggleAttribute("hidden", ok); iconOk.toggleAttribute("hidden", !ok); };
+        const done = () => { track("copy_email"); show(true); setTimeout(() => show(false), 2000); };
+        const EMAIL = "dheiver.santos@mangaba.ia.br";
+        const legacy = () => {
+          const ta = document.createElement("textarea");
+          ta.value = EMAIL; ta.setAttribute("readonly", ""); ta.style.cssText = "position:fixed;opacity:0";
+          document.body.appendChild(ta); ta.select();
+          let ok = false; try { ok = document.execCommand("copy"); } catch { /* ignore */ }
+          ta.remove();
+          if (ok) done(); else window.location.href = "mailto:" + EMAIL;
+        };
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(EMAIL).then(done, legacy);
+        else legacy();
       });
     }
 
@@ -570,7 +622,7 @@
       const msg = document.getElementById("nl-success");
       const btn = nlForm.querySelector('button[type="submit"]');
       const email = document.getElementById("nl-email").value;
-      const okText = msg.textContent;
+      const okText = msg.dataset.ok || (msg.dataset.ok = msg.textContent);
       btn.disabled = true;
       try {
         const res = await fetch("https://formsubmit.co/ajax/dheiver.santos@mangaba.ia.br", {

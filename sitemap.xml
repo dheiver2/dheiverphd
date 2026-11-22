@@ -76,4 +76,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url><loc>https://dheiverphd.com/publications/</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://dheiverphd.com/publications/01-lerp-qwen/</loc><changefreq>yearly</changefreq></url>
+  <url><loc>https://dheiverphd.com/publications/02-slerp-vs-lerp/</loc><changefreq>yearly</changefreq></url>
+  <url><loc>https://dheiverphd.com/publications/03-task-arithmetic-extrapolation/</loc><changefreq>yearly</changefreq></url>
+  <url><loc>https://dheiverphd.com/publications/04-three-model-merge/</loc><changefreq>yearly</changefreq></url>
+  <url><loc>https://dheiverphd.com/publications/05-layerwise-merge-winners-curse/</loc><changefreq>yearly</changefreq></url>
+  <url><loc>https://dheiverphd.com/publications/06-lerp-smollm2/</loc><changefreq>yearly</changefreq></url>
+  <url><loc>https://dheiverphd.com/publications/07-checkpoint-averaging-pythia/</loc><changefreq>yearly</changefreq></url>
+  <url><loc>https://dheiverphd.com/publications/08-winners-curse-merge-selection/</loc><changefreq>yearly</changefreq></url>
+  <url><loc>https://dheiverphd.com/publications/09-validation-size-selection-regret/</loc><changefreq>yearly</changefreq></url>
+  <url><loc>https://dheiverphd.com/publications/10-accuracy-perplexity-frontier/</loc><changefreq>yearly</changefreq></url>
 </urlset>
