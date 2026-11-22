@@ -71,6 +71,30 @@
   <link rel="stylesheet" href="assets/vendor/splide-core.min.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "O que faz um consultor independente de IA?", "acceptedAnswer": {"@type": "Answer", "text": "Um consultor independente de IA avalia como sua organização usa IA — modelos, processos e supervisão humana — sem vender software ou plataforma. O único produto é uma visão precisa da sua exposição real, além de treinamento para sua equipe agir sobre ela."}}, {"@type": "Question", "name": "O que é fine-tuning de modelos de IA corporativos?", "acceptedAnswer": {"@type": "Answer", "text": "Fine-tuning adapta um modelo de linguagem aos dados, vocabulário e processos da sua empresa, gerando um modelo proprietário que roda na sua própria infraestrutura — independente de preços, limites e mudanças de política das big techs. Usamos LoRA ou fine-tuning completo conforme o caso."}}, {"@type": "Question", "name": "Como funciona a Análise e Avaliação de IA?", "acceptedAnswer": {"@type": "Answer", "text": "É uma avaliação estruturada por entrevistas, revisão de processos e análise de documentação — sem necessidade de acesso ao código. O produto final é um mapa de riscos específico, priorizado e acionável, com relatório escrito, apresentação e sessão de acompanhamento."}}, {"@type": "Question", "name": "Quem é Dheiver Santos?", "acceptedAnswer": {"@type": "Answer", "text": "Dheiver Santos, PhD, é engenheiro de machine learning e pesquisador de IA, doutor em Engenharia Química com ênfase em IA (UFBA/UFRJ), criador do framework open-source Mangaba.AI e fundador da healthtech Cognai. Tem mais de 580 citações acadêmicas e experiência na SX Negócios e no Grupo Boticário."}}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Dheiver Santos, PhD — Independent AI Advisory", "url": "https://dheiverphd.com/", "founder": {"@type": "Person", "name": "Dheiver Santos", "honorificSuffix": "PhD"}, "email": "dheiver.santos@mangaba.ia.br", "areaServed": "BR", "availableLanguage": ["pt-BR", "en", "es"], "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Executive Training & Programs", "url": "https://dheiverphd.com/executive-training.html"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Review & Assessment", "url": "https://dheiverphd.com/ai-review.html"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom AI Model Training & Fine-Tuning", "url": "https://dheiverphd.com/fine-tuning.html"}}]}</script>
+  <!-- Google Ads tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17324759362"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17324759362');
+    // Conversão de lead: clique em WhatsApp, agendamento (cal.com) ou e-mail.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a) return;
+      var h = a.getAttribute('href') || '';
+      if (/wa\.me|api\.whatsapp\.com|cal\.com\/|^mailto:/i.test(h)) {
+        try {
+          gtag('event', 'conversion', {
+            send_to: 'AW-17324759362/HZLhCInitr0dEMKyi8VA',
+            value: 1.0,
+            currency: 'BRL',
+            transport_type: 'beacon'
+          });
+        } catch (err) { /* tracking nunca pode quebrar a UX */ }
+      }
+    }, true);
+  </script>
 </head>
 <body>
   <div class="scroll-progress" id="scroll-progress"></div>

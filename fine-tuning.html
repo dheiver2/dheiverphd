@@ -34,6 +34,30 @@
     .svc .faq-item summary { padding: 1rem 0; cursor: pointer; font-weight: 600; }
     .svc .faq-item p { padding: 0 0 1.25rem; }
   </style>
+  <!-- Google Ads tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17324759362"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17324759362');
+    // Conversão de lead: clique em WhatsApp, agendamento (cal.com) ou e-mail.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a) return;
+      var h = a.getAttribute('href') || '';
+      if (/wa\.me|api\.whatsapp\.com|cal\.com\/|^mailto:/i.test(h)) {
+        try {
+          gtag('event', 'conversion', {
+            send_to: 'AW-17324759362/HZLhCInitr0dEMKyi8VA',
+            value: 1.0,
+            currency: 'BRL',
+            transport_type: 'beacon'
+          });
+        } catch (err) { /* tracking nunca pode quebrar a UX */ }
+      }
+    }, true);
+  </script>
 </head>
 <body>
   <main class="svc">
